@@ -1,7 +1,24 @@
-import { Inter } from "next/font/google";
+import localFont from "@next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// setting up the fonts to be usdd
+const poppins = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Recoleta-Black.ttf",
+      weight: "400",
+    },
+    {
+      path: "../../public/fonts/Recoleta-Medium.ttf",
+      weight: "300",
+    },
+    {
+      path: "../../public/fonts/Recoleta-Light.ttf",
+      weight: "200",
+    },
+  ],
+  variable: "--font-Recoleta-Black",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }
