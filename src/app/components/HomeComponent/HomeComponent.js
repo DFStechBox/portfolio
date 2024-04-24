@@ -2,8 +2,8 @@ import React from "react";
 import { Hind } from "next/font/google";
 
 const hind = Hind({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700']
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const HomeComponent = () => {
@@ -27,6 +27,7 @@ const HomeComponent = () => {
                 <div className="lg:pl-24 sm:pl-10 pl-0 py-20 md:py-0 md:text-start text-center">
                   <p className={`text-[#47aede]`}>Hi There</p>
                 </div>
+                <div></div>
               </div>
             </div>
           </div>
