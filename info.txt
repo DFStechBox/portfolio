@@ -7,6 +7,7 @@ To do this you want to execute
 
 git pull
 
+
 ...which is usually set up to pull from the default remote (origin) to your current branch. Git might complain if this isn't the case, and so the longer version will work as well:
 
 git pull origin {branch_name}

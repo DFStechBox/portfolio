@@ -1,5 +1,8 @@
 import React from "react";
 import { Hind } from "next/font/google";
+// import Slider from "react-slick";
+// import "slick-carosel/slick/slick.css";
+// import "slick-carosel/slick/slick-theme.css";
 
 const hind = Hind({
   subsets: ["latin"],
@@ -7,6 +10,92 @@ const hind = Hind({
 });
 
 const HomeComponent = () => {
+  // slider carousel for skillbox
+
+  var settings = {
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    speed: 2000,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    loop: true,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1760,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1460,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1290,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <div
@@ -57,7 +146,21 @@ const HomeComponent = () => {
             </div>
             <div className="col-span-12 pt-[150px] md:bg-transparent bg-[#d9eef7] md:pt-[130px] md:col-span-7">
               <div className="container m-auto">
-                <img src="/ehizeex.png" alt="profile pics" decoding="async" ></img>
+                <img
+                  src="/ehizeex.png"
+                  alt="profile pics"
+                  decoding="async"
+                ></img>
+              </div>
+            </div>
+          </div>
+          <div className="container m-auto absolute">
+            <div className="px-3">
+              <div
+                className="relative max-w-sm bottom-[170px] md:max-w-6xl px-5 lg:px-14 overflow-auto mx-auto bg-white rounded-2xl z-20"
+                style={{ boxShadow: "#48afde -10 25px 50px 10px" }}
+              >
+                <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll"></div>
               </div>
             </div>
           </div>
