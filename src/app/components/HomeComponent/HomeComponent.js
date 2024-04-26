@@ -39,12 +39,25 @@ const HomeComponent = () => {
                     CEO Edubaba Digital &amp; an Instructor
                   </h2>
                   <a
-                    className={`inline-block bg-[#47aede] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 lg:mt-10 ${hind.className} hover:bg-[#223740] hover:show-lg transform hover:translate-y-1 `}
+                    href="/#portfolio"
+                    className={`cursor-pointer inline-block bg-[#47aede] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 lg:mt-10 ${hind.className} hover:bg-[#223740] hover:shadow-lg transform hover:translate-y-1 `}
                   >
                     Projects
                   </a>
+                  <a
+                    href="/ehizcv.pdf"
+                    download="edubaba Ehizcv.pdf"
+                    className={`cursor-pointer ml-10 inline-block bg-[#223740] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 lg:mt-10 ${hind.className} hover:bg-[#223740] hover:shadow-lg transform hover:translate-y-1 `}
+                  >
+                    Resume
+                  </a>
                 </div>
                 <div></div>
+              </div>
+            </div>
+            <div className="col-span-12 pt-[150px] md:bg-transparent bg-[#d9eef7] md:pt-[130px] md:col-span-7">
+              <div className="container m-auto">
+                <img src="/ehizeex.png" alt="profile pics" decoding="async" ></img>
               </div>
             </div>
           </div>
