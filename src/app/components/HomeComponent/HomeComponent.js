@@ -1,8 +1,8 @@
 import React from "react";
 import { Hind } from "next/font/google";
-// import Slider from "react-slick";
-// import "slick-carosel/slick/slick.css";
-// import "slick-carosel/slick/slick-theme.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const hind = Hind({
   subsets: ["latin"],
@@ -157,10 +157,19 @@ const HomeComponent = () => {
           <div className="container m-auto absolute">
             <div className="px-3">
               <div
-                className="relative max-w-sm bottom-[170px] md:max-w-6xl px-5 lg:px-14 overflow-auto mx-auto bg-white rounded-2xl z-20"
-                style={{ boxShadow: "#48afde -10 25px 50px 10px" }}
+                className="relative max-w-sm bottom-[70px] md:max-w-5xl xl:max-w-6xl px-5 lg:px-14 overflow-auto mx-auto bg-white rounded-2xl z-20"
+                style={{ boxShadow: "#48afde -10px 25px 50px 10px" }}
               >
-                <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll"></div>
+                <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
+                  <Slider {...settings}>
+                  <img src="/reactjs.png" alt="reactjs" className="h-12" />
+                  <img src="/nextjs.png" alt="nextjs" className="h-12" />
+                  <img src="/docker.png" alt="docker" className="h-12" />
+                  <img src="/expressjs.png" alt="expressjs" className="h-12" />
+                  <img src="/nodejs.png" alt="nodejs" className="h-12" />
+                  <img src="/expressjs.png" alt="expressjs" className="h-12" />
+                  </Slider>
+                </div>
               </div>
             </div>
           </div>
