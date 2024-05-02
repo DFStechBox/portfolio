@@ -162,6 +162,7 @@ const HomeComponent = () => {
               >
                 <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
                   <Slider {...settings}>
+                  <img src="/mongodb.png" alt="mongodb" />
                   <img src="/reactjs.png" alt="reactjs" className="h-12" />
                   <img src="/nextjs.png" alt="nextjs" className="h-12" />
                   <img src="/docker.png" alt="docker" className="h-12" />
