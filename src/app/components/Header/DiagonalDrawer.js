@@ -6,7 +6,11 @@ const DiagonalDrawer = (
   selectedIndex1,
   setSelectedIndex1
 ) => {
-  return <div></div>;
+  return (
+    <div>
+      {/* <h1>This is home number 1</h1> */}
+    </div>
+)
 };
 
 export default DiagonalDrawer;

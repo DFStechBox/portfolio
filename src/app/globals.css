@@ -25,10 +25,10 @@ body {
   position: absolute;
 }
 
- headerShow {
-      visibility: visible;
-      opacity: 1;
-    }
+headerShow {
+  visibility: visible;
+  opacity: 1;
+}
 
 /*this one here is responsible for the smooth scroll*/
 html {

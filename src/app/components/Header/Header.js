@@ -31,7 +31,7 @@ const Header = () => {
           isOpen={isOpen}
           setIsOpen={setIsOpen}
           selectedIndex1={selectedIndex1}
-          setSelectedIndex1={setSelectedIndex1}        
+          setSelectedIndex1={setSelectedIndex1}
         />
       </div>
       <header
@@ -43,15 +43,21 @@ const Header = () => {
           boxShadow: isScrolled ? "#48afde -10px 25px 50px 10px" : "",
         }}
       >
-        <div
-          onClick={openDrawer}
-          className="z-30 absolute cursor-pointer w-14 h-14 lg:w-24 lg:h-24 bg-[#48afde] flex justify-center items-center rounded-br-3xl">
-          <div className="relative w-7 lg:w-10 h-7 lg:h-10 flex justify-center items-center">
-          <img src="/drawer.png" className="w-[150px] h-10" alt="drawer item" />
+        <div className="relative">
+          <div
+            onClick={openDrawer}
+            className="z-30 absolute cursor-pointer w-14 h-14 lg:w-24 lg:h-24 bg-[#48afde] flex justify-center items-center rounded-br-3xl"
+          >
+            <div className="relative w-7 lg:w-10 h-7 lg:h-10 flex justify-center items-center">
+              <img
+                src="/drawer.png"
+                className="w-[150px] h-10"
+                alt="drawer item"
+              />
+            </div>
           </div>
-
         </div>
-        <nav className="invisible xl:visible xl:max-w-4xl 2xl:max-w-7xl mw-auto">
+        <nav className="invisible xl:visible xl:max-w-4xl 2xl:max-w-7xl mx-auto">
           <ul className="flex font-recoletaBlack flex-row items-center h-24">
             {/* Li 0 */}
             <li className="group text-2xl relative font-bold mr-20">
@@ -118,8 +124,7 @@ const Header = () => {
                 className={`menu-item ${
                   selectedIndex1 === 0 ? "text-black" : ""
                 }text-[#666d47] group-hover:text-black`}
-                href="/#hire-
-                me"
+                href="/#hire-me"
                 onClick={() => setSelectedIndex1(3)}
               >
                 HireMe
