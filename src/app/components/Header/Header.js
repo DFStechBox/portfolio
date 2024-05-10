@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Drawer from "./DiagonalDrawer";
+import "../Header/DiagonalDrawer.css";
 const Header = () => {
   const [selectedIndex1, setSelectedIndex1] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
