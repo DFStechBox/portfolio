@@ -57,37 +57,106 @@ const DiagonalDrawer = ({
         </div>
       </div>
       <header
-        className={
-          `fixed w-full transition-all duration-500 z-40 $[pathname === '/]`
-            ? "top-0"
-            : "top -[-98 px]"
-        }
+        className={`fixed w-full transition-all duration-500 z-40 ${
+          pathname === "/" ? "top-0" : "top -[-98 px]"
+        }`}
       >
         <div className="relative">
-          <div className="z-20 absolute transform-gpu ease-in-out duration-500 transition-all scale-100 -translate-x-none -translate-y-none opacity-100 bg-[#223740] bg-opacity-95 w-full flex-col sm:flex-row lg:flex-col items-center justify-center">
+          <div className="z-20 absolute transform-gpu ease-in-out duration-500 transition-all scale-100 -translate-x-none -translate-y-none opacity-100 bg-[#223740] bg-opacity-95 w-full h-screen flex flex-col sm:flex-row lg:flex-col items-center justify-center">
             <nav className="text-white font-recoletaBold text-center text-4xl lg:text-4xl 2xl:text-6xl uppercase">
               <ul className="flex flex-col">
+                {/* Home Component */}
                 <li className="group my-4 xl:my-4 2xl:my-6 relative">
                   <div className="inline-block relative">
                     <a
-                      href="/home"
+                      href="/#home"
                       onClick={() => {
-                        selectedIndex1(0);
+                        setSelectedIndex1(0);
                         setIsOpen(false);
                       }}
                     >
                       Home
                     </a>
-                    {selectedIndex1 === 0 ? (
+                    {/* {selectedIndex1 === 0 ? (
                       <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6 opacity-100 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48afde] rounded-xl -z-10"></div>
                     ) : (
                       ""
-                    )}
+                    )} */}
+                    <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0 opacity-0 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48afde] rounded-xl -z-10"></div>
+                  </div>
+                </li>
+
+                {/* Portfolio Component */}
+                <li className="group my-4 xl:my-4 2xl:my-6 relative">
+                  <div className="inline-block relative">
+                    <a
+                      href="/#portfolio"
+                      onClick={() => {
+                        setSelectedIndex1(1);
+                        setIsOpen(false);
+                      }}
+                    >
+                      Portfolio
+                    </a>
+                    {/* {selectedIndex1 === 1 ? (
+                      <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6 opacity-100 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48afde] rounded-xl -z-10"></div>
+                    ) : (
+                      ""
+                    )} */}
+                    <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0 opacity-0 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48afde] rounded-xl -z-10"></div>
+                  </div>
+                </li>
+
+                {/* About Me Component */}
+                <li className="group my-4 xl:my-4 2xl:my-6 relative">
+                  <div className="inline-block relative">
+                    <a
+                      href="/#about-me"
+                      onClick={() => {
+                        setSelectedIndex1(2);
+                        setIsOpen(false);
+                      }}
+                    >
+                      About Me
+                    </a>
+                    {/* {selectedIndex1 === 2 ? (
+                      <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6 opacity-100 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48afde] rounded-xl -z-10"></div>
+                    ) : (
+                      ""
+                    )} */}
+                    <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0 opacity-0 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48afde] rounded-xl -z-10"></div>
+                  </div>
+                </li>
+
+                <li className="group my-4 xl:my-4 2xl:my-6 relative">
+                  <div className="inline-block relative">
+                    <a
+                      href="/#hire-me"
+                      onClick={() => {
+                        setSelectedIndex1(3);
+                        setIsOpen(false);
+                      }}
+                    >
+                      Hire Me
+                    </a>
+                    {/* {selectedIndex1 === 0 ? (
+                      <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6 opacity-100 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48afde] rounded-xl -z-10"></div>
+                    ) : (
+                      ""
+                    )} */}
                     <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0 opacity-0 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48afde] rounded-xl -z-10"></div>
                   </div>
                 </li>
               </ul>
             </nav>
+            <section className="mt-14 sm:mt-12 lg:mt-14 text-center relative sm:absolute lg:relative sm:right-0 lg:right-0 h-auto sm:h-full lg:h-auto">
+              <h3 className="block sm:hidden lg:block font-bold text-[#48afde] text-2xl uppercase mg-5">
+                Follow me Around
+              </h3>
+              <div className="flex flex-row sm:flex-col lgflex-row">
+                <a href="https://twitter.com/Ehiedu_baba"></a>
+              </div>
+            </section>
           </div>
         </div>
       </header>
