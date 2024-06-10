@@ -17,7 +17,7 @@ export default function Home() {
         className="mt-0 pt-5 -mb-40"
         style={{
           backgroundImage:
-            "linear-gradient(-62deg, #eef7fb 0 45%, white 0% 100%",
+            "linear-gradient(-62deg, #eef7fb 0 45%, white 0% 100%)",
           width: "100%",
         }}
       >
